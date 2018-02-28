@@ -1,0 +1,9 @@
+<h1>Add a comment</h1>
+<%= form_for [@topic, @comment] do |f|%>
+  <%= f.label :body%>
+  <%= f.area :body, required: true %>
+  <br />
+    <%= f.label :author%>
+  <%= f.text_field :author, placeholder: 'Leave blank to remail anonymous'%>
+  <br />
+  <%= f.submit%>
